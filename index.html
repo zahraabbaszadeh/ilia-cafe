@@ -1,0 +1,1090 @@
+<html>
+<head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<title>ilia caffe</title>
+<style>
+
+
+
+body {
+    font-family: "Vazirmatn", sans-serif;
+    font-weight: 400;
+    background-color: #3B2922;
+    color: #F5E6D3;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-image {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.intro-text {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    direction: rtl;
+    line-height: 2;
+    color:#F5E6D3 ;
+}
+a {
+    color: #F5E6D3;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 40px;
+}
+
+a:hover {
+    color: #C8A46A;
+}
+
+.menu-item img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 auto 14px;
+}
+
+  #menu {
+    text-align: center;
+    padding: 30px;
+}
+
+
+#menu h2 {
+    color: #E4C69A;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 45px 0 25px;
+    text-align: center;
+}
+
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.menu-item {
+    background: #F5E6D3;
+    color: #5B3A29;
+    width: 200px;
+    padding: 16px;
+    border: 1px solid #D6B98C;
+    border-radius: 18px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.menu-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.menu-item p {
+    font-size: 15px;
+    color: #80634D;
+}
+
+.menu-item h4 {
+    font-size: 18px;
+    color: #8B5E3C;
+    font-weight: 700;
+}
+
+
+#contact {
+    width: 90%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 60px auto 35px;
+    padding: 35px 25px 20px;
+    background: linear-gradient(145deg, #4A342A, #35241E);
+    border: 1px solid #9B7958;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-heading {
+    margin-bottom: 30px;
+}
+
+.contact-decoration {
+    color: #D6B477;
+    font-size: 22px;
+}
+
+.contact-heading h2 {
+    color: #F5E6D3;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.contact-heading p {
+    color: #D9C2A5;
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.contact-item {
+    flex: 1 1 210px;
+    max-width: 280px;
+    box-sizing: border-box;
+    padding: 25px 16px;
+    background: #F5E6D3;
+    border: 1px solid #D6B98C;
+    border-radius: 16px;
+    color: #5B3A29;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #E8D2B5;
+    color: #795238;
+    font-size: 25px;
+}
+
+.contact-item h3 {
+    color: #5B3A29;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 14px 0 8px;
+}
+
+.contact-item p {
+    color: #80634D;
+    font-size: 14px;
+    line-height: 1.9;
+    direction: rtl;
+    unicode-bidi: plaintext;
+    overflow-wrap: anywhere;
+}
+
+.contact-item p[dir="ltr"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.contact-item a {
+    display: inline-block;
+    color: #795238;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #B99A72;
+    padding-bottom: 3px;
+}
+
+.contact-item a:hover {
+    color: #A16D3D;
+}
+
+.contact-footer {
+    color: #D9C2A5;
+    font-size: 12px;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #6B4C3A;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        width: 94%;
+        padding: 28px 14px 18px;
+    }
+
+    .contact-heading h2 {
+        font-size: 22px;
+    }
+
+    .contact-container {
+        gap: 14px;
+    }
+
+    .contact-item {
+        flex-basis: 100%;
+        max-width: none;
+    }
+}
+
+
+#contact h2 {
+    color: #F5E6D3;
+    font-size: 40px;
+}
+
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item p {
+    color: #F5E6D3;
+    font-size: 20px;
+    direction: rtl;
+    unicode-bidi: plaintext;
+}
+
+.contact-item p.ltr {
+    direction: ltr;
+    unicode-bidi: embed;
+    text-align: left;
+     direction: ltr;
+    unicode-bidi: isolate;
+}
+
+
+/* هدر اصلی سایت */
+.site-header {
+    width: 92%;
+    max-width: 1150px;
+    margin: 25px auto 45px;
+    padding: 28px 24px 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(145deg, #4A342A, #35241E);
+    border: 1px solid #9B7958;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* خط طلایی بالای کادر */
+.site-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 76%;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #D6B477,
+        #F5E6D3,
+        #D6B477,
+        transparent
+    );
+}
+
+/* نام کافه */
+.brand {
+    color: #F5E6D3;
+    margin-bottom: 20px;
+}
+
+.brand-icon {
+    display: block;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.brand-tagline {
+    color: #D6B477;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 3px;
+}
+
+/* جداکننده */
+.header-divider {
+    width: 65%;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #9B7958,
+        transparent
+    );
+    margin: 0 auto 18px;
+}
+
+/* نوار لینک‌ها */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 100%;
+    margin: 0 auto 18px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar .nav-link {
+    color: #F5E6D3;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    padding: 9px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background: #6F4E37;
+    border-color: #9B7958;
+    color: #F0D5A4;
+}
+
+/* شعار پایین هدر */
+.header-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    color: #D9C2A5;
+    font-size: 13px;
+}
+
+.header-note span:first-child,
+.header-note span:last-child {
+    color: #D6B477;
+}
+
+/* نمایش در موبایل */
+@media (max-width: 600px) {
+    .site-header {
+        width: 94%;
+        padding: 24px 12px 18px;
+        margin-top: 15px;
+    }
+
+    .brand-name {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .navbar {
+        gap: 3px;
+    }
+
+    .navbar .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .header-note {
+        font-size: 11px;
+        gap: 7px;
+    }
+}
+/* اصلاح اجباری نمایش متن آدرس و ساعت کاری */
+#contact .contact-item {
+    display: block !important;
+    background-color: #F5E6D3 !important;
+    color: #5B3A29 !important;
+    min-height: 180px;
+}
+
+#contact .contact-item h3 {
+    color: #5B3A29 !important;
+    font-size: 17px !important;
+}
+
+#contact .contact-item p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #5B3A29 !important;
+    font-size: 14px !important;
+    direction: rtl;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+#contact .contact-item p[dir="ltr"] {
+    direction: ltr;
+    text-align: center;
+}
+</style>
+</head>
+<body style="background-color: 	#6F4E37;;">
+
+
+<header class="site-header" id="home">
+
+    <div class="brand">
+        <span class="brand-icon">☕</span>
+        <div class="brand-name">ILIA CAFE</div>
+        <div class="brand-tagline">A MOMENT OF TASTE</div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <nav class="navbar">
+        <a href="#contact" class="nav-link">ارتباط با ما</a>
+        <a href="#menu" class="nav-link">منوی کافه</a>
+        <a href="#home" class="nav-link">خانه</a>
+    </nav>
+
+    <div class="header-note">
+        <span>✦</span>
+        <span>طعم لحظه‌های ناب، با عطر قهوه</span>
+        <span>✦</span>
+    </div>
+
+</header>
+
+
+<section id="home-content">
+<img src="eee.jpg" class="hero-image" alt="Coffee">
+<br>
+<br>
+<br>
+  <h3 class="intro-text">طعم لحظه‌های ناب، با عطر قهوه!<b><br><br><br>به دنیای عطر دل‌انگیز قهوه خوش اومدید!<br><br>
+
+در کافه ایلیا، قهوه فراتر از یک نوشیدنیه؛ تجربه‌ای از طعم، کیفیت و آرامشه.<br><br> ما اینجا هستیم تا با قهوه‌های خوش‌عطر و محصولات تخصصی دنیای قهوه، لحظاتی متفاوت و به‌یادماندنی براتون بسازیم.<br><br><br>
+
+کافه ایلیا؛ جایی برای عاشقان قهوه.</h3>
+</section>
+<section id="menu">
+    <h2>Our Menu ☕</h2>
+    <h2>نوشیدنی گرم☕</h2>
+    <div class="menu-container">
+
+        <div class="menu-item">
+    <img src="espresso.jpg" alt="single Espresso">
+    <h3>single Espresso</h3>
+    <p>اسپرسو تک</p>
+    <h4>95.000</h4>
+        </div>
+        <div class="menu-item">
+    <img src="espresso.jpg" alt="double Espresso">
+    <h3>double Espresso</h3>
+    <p>اسپرسو دوبل</p>
+    <h4>110.000</h4>
+        </div> 
+
+         <div class="menu-item">
+    <img src="espresso.jpg" alt="Espresso con panna">
+    <h3>Espresso con panna</h3>
+    <p>اسپرسو کن پانا</p>
+    <h4>160.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="americano.jpg" alt="Americano">
+            <h3>Americano</h3>
+            <p>آمریکانو</p>
+            <h4>120.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="ice-latte.jpg" alt="latte"> 
+            <h3>Latte</h3>
+            <p>لاته</p>
+            <h4>215.000</h4>
+        </div>
+
+        <div class="menu-item">
+    <img src="cappuccino.jpg" alt="Classic Cappuccino">      
+            <h3>Classic Cappuccino</h3>
+            <p>کاپوچینو کلاسیک</p>
+            <h4>205.000</h4>
+        </div>
+
+        <div class="menu-item">
+    <img src="cappuccino.jpg" alt="Caramel Cappuccino">      
+            <h3>Caramel Cappuccino</h3>
+            <p>کاپوچینو کارامل</p>
+            <h4>210.000</h4>
+        </div>
+
+        <div class="menu-item">
+    <img src="cappuccino.jpg" alt="Cappuccino">      
+            <h3>Cappuccino</h3>
+            <p>کاپوچینو</p>
+            <h4>200.000</h4>
+        </div>
+
+        <div class="menu-item">
+    <img src="Hazelnut-Mocha.jpg" alt="Hazelnut Mocha">      
+            <h3>Hazelnut Mocha</h3>
+            <p>موکا فندق</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+    <img src="Special-Moch.jpg" alt="Special Moch">      
+            <h3>Special Moch</h3>
+            <p>موکا مخصوص</p>
+            <h4>245.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Lotus-Macciato.jpg" alt="Lotus Macciato">     
+            <h3>Lotus Macciato</h3>
+            <p>لوتوس ماکیاتو</p>
+            <h4>225.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Rose-Macciato.jpg" alt="Rose Macciato">     
+            <h3>Rose Macciato</h3>
+            <p>رز ماکیاتو</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Vanilla-Macciato.jpg" alt="Vanilla Macciato">     
+            <h3>Vanilla Macciato</h3>
+            <p>وانیل ماکیاتو</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Caramel-Macciato.jpg" alt="Caramel Macciato">     
+            <h3>Caramel Macciato</h3>
+            <p>کارامل ماکیاتو</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Coconut-Macciato.jpg" alt="Coconut Macciato">     
+            <h3>Coconut Macciato</h3>
+            <p>نارگیل ماکیاتو</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Pistachio-Saffron-Latte.jpg" alt="Pistachio Saffron Latte">     
+            <h3>Pistachio Saffron Latte</h3>
+            <p>لاته پسته زعفران مغزدار</p>
+            <h4>270.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="hot-chocolate.jpg" alt="hot-chocolate">
+            <h3>Hot Chocolate</h3>
+            <p>هات چاکلت</p>
+            <h4>205.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Hot-Milk.jpg" alt="Hot-Milk">
+            <h3>Hot Milk</h3>
+            <p>شیر گرم</p>
+            <h4>55.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="masala.jpg" alt="masala">     
+            <h3>Masala</h3>
+            <p>چای ماسالا</p>
+            <h4>200.000</h4>
+        </div>
+
+        <div class="menu-item">
+          <img src="Karak-tea.jpg" alt="Karak tea">     
+            <h3>Karak tea</h3>
+            <p>چای کرک</p>
+            <h4>200.000</h4>
+        </div>
+
+        
+    </div>
+
+    <h2>چای و دمنوش ☕</h2>  
+
+
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <img src="tea.jpg" alt="tea">
+            <h3>Tea</h3>
+            <p>چای</p>
+            <h4>50.000</h4>
+        </div>
+    
+        <div class="menu-item">
+            <img src="Rock-Candy-Tea.jpg" alt="Rock Candy Tea">
+            <h3>Rock Candy Tea</h3>
+            <p>چای نبات</p>
+            <h4>60.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Green-Tea.jpg" alt="Green Tea">
+            <h3>Green Tea</h3>
+            <p>چای سبز</p>
+            <h4>140.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Borage-Tea.jpg" alt="Borage Tea">
+            <h3>Borage Tea</h3>
+            <p>چای گل گاو زبان</p>
+            <h4>150.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Chamomile-Tea.jpg" alt="Chamomile Tea">
+            <h3>Chamomile Tea</h3>
+            <p>چای بابونه</p>
+            <h4>140.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Hibiscus-Tea.jpg" alt="Hibiscus Tea">
+            <h3>Hibiscus Tea</h3>
+            <p>چای ترش</p>
+            <h4>145.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Ginger-Tea.jpg" alt="Ginger Tea">
+            <h3>Ginger Tea</h3>
+            <p>چای زنجبیل</p>
+            <h4>145.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Cinnamon-Tea.jpg" alt="Cinnamon Tea">
+            <h3>Cinnamon Tea</h3>
+            <p>چای دارچین</p>
+            <h4>75.000</h4>
+        </div>
+    </div>
+
+     <h2>نوشیدنی سرد🧊</h2> 
+
+
+
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <img src="Affogato.jpg" alt="Affogato">
+            <h3>Affogato</h3>
+            <p>آفوگاتو</p>
+            <h4>300.000</h4>
+        </div>
+    
+    <div class="menu-item">
+            <img src="Iced-Americano.jpg" alt="Iced Americano">
+            <h3>Iced Americano</h3>
+            <p>آیس آمریکانو</p>
+            <h4>130.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Latte.jpg" alt="Iced Latte">
+            <h3>Iced Latte</h3>
+            <p>آیس لاته</p>
+            <h4>210.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Mocha.jpg" alt="Iced Mocha">
+            <h3>Iced Mocha</h3>
+            <p>آیس موکا</p>
+            <h4>220.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Rose.jpg" alt="Iced Rose">
+            <h3>Iced Rose</h3>
+            <p>آیس رز</p>
+            <h4>220.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Caramel-Latte.jpg" alt="Iced Caramel Latte">
+            <h3>Iced Caramel Latte</h3>
+            <p>آیس کارامل</p>
+            <h4>220.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Vanilla-Latte.jpg" alt="Iced Vanilla Latte">
+            <h3>Iced Vanilla Latte</h3>
+            <p>آیس وانیل</p>
+            <h4>220.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Iced-Hazelnut-Latte.jpg" alt="Iced Hazelnut Latte">
+            <h3>Iced Hazelnut Latte</h3>
+            <p>آیس فندق</p>
+            <h4>220.000</h4>
+        </div>
+
+        <div class="menu-item">
+            <img src="Iced-Lotus-Latte.jpg" alt="Iced Lotus Latte">
+            <h3>Iced Lotus Latte</h3>
+            <p>آیس لوتوس</p>
+            <h4>230.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Watermelon-Juice.jpg" alt="Watermelon Juice">
+            <h3>Watermelon Juice</h3>
+            <p>آب هندوانه</p>
+            <h4>240.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Cantaloupe-Juice.jpg" alt="Cantaloupe Juice">
+            <h3>Cantaloupe Juice</h3>
+            <p>آب طالبی</p>
+            <h4>240.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Orange-Juice.jpg" alt="Orange Juice">
+            <h3>Orange Juice</h3>
+            <p>آب پرتقال</p>
+            <h4>240.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Sour-Cherry-Juice.jpg" alt="Sour Cherry Juice">
+            <h3>Sour Cherry Juice</h3>
+            <p>آب آلبالو</p>
+            <h4>240.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Pineapple-Juice.jpg" alt="Pineapple Juice">
+            <h3>Pineapple Juice</h3>
+            <p>آب آناناس</p>
+            <h4>240.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Mango-Juice.jpg" alt="Mango Juice">
+            <h3>Mango Juice</h3>
+            <p>آب انبه</p>
+            <h4>230.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Blue-Curaçao.jpg" alt="Blue Curaçao">
+            <h3>Blue Curaçao</h3>
+            <p>بلو کاراسائو</p>
+            <h4>260.000</h4>
+        </div>
+</div>
+
+    <h2>قهوه دمی♨️</h2>
+
+<div class="menu-container">
+    
+    <div class="menu-item">
+            <img src="V60–Costa-Rica.jpg" alt="V60 – Costa Rica">
+            <h3>V60 – Costa Rica</h3>
+            <p>وی۶۰ – کاستاریکا</p>
+            <h4>190.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="V60 .jpg" alt="V60 ">
+            <h3>V60 </h3>
+            <p>وی۶۰</p>
+            <h4>200.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Chemex.jpg" alt="Chemex">
+            <h3>Chemex</h3>
+            <p>کمکس</p>
+            <h4>200.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="French-Press.jpg" alt="French Press">
+            <h3>French Press</h3>
+            <p>فرنچ پرس</p>
+            <h4>190.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="AeroPress.jpg" alt="AeroPress">
+            <h3>AeroPress</h3>
+            <p>ائروپرس</p>
+            <h4>200.000</h4>
+        </div>
+
+    
+        <div class="menu-item">
+            <img src="Syphon.jpg" alt="Syphon">
+            <h3>Syphon</h3>
+            <p>سایفون</p>
+            <h4>150.000</h4>
+        </div>
+
+</div>
+<h2>کیک ها🍰</h2>
+    <div class="menu-container">
+    
+    <div class="menu-item">
+            <img src="Plain-Croissant.jpg" alt="Plain Croissant">
+            <h3>Plain Croissant</h3>
+            <p>کروسان ساده</p>
+            <h4>90.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Pain-au-Chocolat.jpg" alt="Pain au Chocolat">
+            <h3>Pain au Chocolat</h3>
+            <p>پن شکلاتی</p>
+            <h4>120.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Milk-Cream-Danish.jpg" alt="Milk Cream Danish">
+            <h3>Milk Cream Danish</h3>
+            <p>دنیش کرم شیر</p>
+            <h4>64.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Oatmeal-Raisin-Cookie.jpg" alt="Oatmeal Raisin Cookie">
+            <h3>Oatmeal Raisin Cookie</h3>
+            <p>کوکی جو دوسر و کشمش</p>
+            <h4>70.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Mini-Baklava.jpg" alt="Mini Baklava">
+            <h3>Mini Baklava</h3>
+            <p>باقلوای کوچک</p>
+            <h4>30.000</h4>
+        </div>
+
+    
+        <div class="menu-item">
+            <img src="Nut-Filled-Baklava.jpg" alt="Nut-Filled Baklava">
+            <h3>Nut-Filled Baklava</h3>
+            <p>باقلوای مغزدار</p>
+            <h4>40.000</h4>
+        </div>
+
+    </div>
+
+<h2>صبحانه🥞</h2>
+<div class="menu-container">
+    
+    <div class="menu-item">
+            <img src="Canned-Tuna.jpg" alt="Canned Tuna">
+            <h3>Canned Tuna</h3>
+            <p>تن ماهی</p>
+            <h4>350.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Sausage&Eggs.jpg" alt="Sausage & Eggs">
+            <h3>Sausage & Eggs</h3>
+            <p>سوسیس تخم‌مرغ</p>
+            <h4>210.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Fried Eggs.jpg" alt="Fried Eggs">
+            <h3>Fried Eggs</h3>
+            <p>نیمرو</p>
+            <h4>200.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Haleem.jpg" alt="Haleem">
+            <h3>Haleem</h3>
+            <p>حلیم</p>
+            <h4>150.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="Persian-Lentil-Stew.jpg" alt="Persian Lentil Stew">
+            <h3>Persian Lentil Stew</h3>
+            <p>عدسی</p>
+            <h4>170.000</h4>
+        </div>
+
+    
+        <div class="menu-item">
+            <img src="Sesame-Halva.jpg" alt="Sesame Halva">
+            <h3>Sesame Halva</h3>
+            <p>حلواشکری</p>
+            <h4>110.000</h4>
+        </div>
+</div>
+
+<h2>قلیان میوه ای💨</h2>
+<div class="menu-container">
+    
+    <div class="menu-item">
+            <img src="w.jpg" alt="Double Apple">
+            <h3>Double Apple</h3>
+            <p>دوسیب</p>
+            <h4>180.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="w.jpg" alt="Double Apple & Sour Cherry">
+            <h3>Double Apple & Sour Cherry</h3>
+            <p>دوسیب آلبالو</p>
+            <h4>180.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="w.jpg" alt="Blueberry">
+            <h3>Blueberry</h3>
+            <p>بلوبری</p>
+            <h4>180.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="w.jpg" alt="Ice Apple">
+            <h3>Ice Apple</h3>
+            <p>سیب یخ</p>
+            <h4>180.000</h4>
+        </div>
+
+    <div class="menu-item">
+            <img src="w.jpg" alt="Orange Mint">
+            <h3>Orange Mint</h3>
+            <p>پرتقال نعنا</p>
+            <h4>180.000</h4>
+        </div>
+
+    
+        <div class="menu-item">
+            <img src="w.jpg" alt="Orange">
+            <h3>Orange</h3>
+            <p>پرتقال</p>
+            <h4>180.000</h4>
+        </div>
+</div>
+</section>
+
+
+<section id="contact">
+
+    <div class="contact-heading">
+        <span class="contact-decoration">✦</span>
+        <h2>با ما در ارتباط باشید</h2>
+        <p>خوشحال می‌شیم در کافه ایلیا میزبان شما باشیم 🤎</p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-item">
+            <span class="contact-icon">⌖</span>
+            <h3>آدرس کافه</h3>
+            <p>
+                شهر قدس، بلوار امام حسین،
+                به سمت مصلی،
+                بین هجرت سوم و چهارم
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">◷</span>
+            <h3>ساعت کاری</h3>
+            <p dir="rtl">هر روز</p>
+            <p dir="ltr">06:00 – 22:30</p>
+            <p>۶ صبح تا ۱۰:۳۰ شب</p>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">☎</span>
+            <h3>شماره تماس</h3>
+            <p>09382729981</p>
+            <a href="tel:YOUR_PHONE">تماس با ما</a>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <h3>اینستاگرام</h3>
+            <p>iliyacoffee.ir</p>
+            <a href="https://instagram.com/YOUR_PAGE"
+               target="_blank"
+               rel="noopener noreferrer">
+                مشاهده صفحه
+            </a>
+        </div>
+
+    </div>
+
+    <div class="contact-footer" dir="rtl">
+        <span>با عشق و عطر قهوه، از طرف</span>
+        <span dir="ltr">ILIA CAFE ☕</span>
+    </div>
+
+</section>
+
+
+</body>
+</html>
